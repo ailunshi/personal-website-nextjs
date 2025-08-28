@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --color-purple-haze: #8666A9;
+  --color-moon-yellow: rgba(255, 222, 92, 1);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-moon-yellow);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ffffff;
+  transition: all 1s ease-in-out;
+  transform: scale(1.05);
+  font-weight: medium;
+}
+
+.theme-bg {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 100%),
+    radial-gradient(87.22% 161.96% at -5% 115.48%, #FFDE5C 7%, #8666A9 56%, #352843 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  transition: transform 1s ease-in-out;
+  transform: scale(1.05);
+  cursor: pointer
+}
+
+.disappear {
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+.parent:hover .disappear {
+  visibility: visible;
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
