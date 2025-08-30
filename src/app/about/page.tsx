@@ -22,13 +22,13 @@ export default function About() {
             />
 
             <div className="flex flex-col mr-15 p-5"> {/* div for text and socials */}
-            <p className="text-white font-raleway p-5 text-3xl">
+            <p className={`text-white ${raleway.className} p-5 text-3xl`}>
                 Ailun Shi (pronounced Allen) is a novelist currently based in the Bay Area who 
             has lived across Shanghai, Las Vegas, Los Angeles, Wuhan, and Madrid.
 
             </p>
 
-            <p className="text-white font-raleway p-5 text-3xl">
+            <p className={`text-white ${raleway.className} p-5 text-3xl`}>
             She recently graduated from UC Berkeley. Outside of writing, 
             she’s a competitive ballroom dancer, language enthusiast, and occasional half-marathon runner.
             </p>
