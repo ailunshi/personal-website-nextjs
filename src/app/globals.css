@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,13 +18,16 @@
 @theme {
   --color-purple-haze: #8666A9;
   --color-moon-yellow: rgba(255, 222, 92, 1);
+  --font-weight-bold: 700;
 }
+
 
 a {
   font-weight: 500;
   color: var(--color-moon-yellow);
   text-decoration: inherit;
 }
+
 a:hover {
   color: #ffffff;
   transition: all 1s ease-in-out;
@@ -32,10 +35,27 @@ a:hover {
   font-weight: medium;
 }
 
+.alata {
+  font-family: var(--font-alata);
+}
+
+.cherish {
+  font-family: var(--font-cherish);
+}
+
+.raleway {
+  font-family: var(--font-raleway), sans-serif;
+}
+
+
 .theme-bg {
   background-image:
     linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 100%),
     radial-gradient(87.22% 161.96% at -5% 115.48%, #FFDE5C 7%, #8666A9 56%, #352843 100%);
+}
+
+.menu {
+  font-weight: bold;
 }
 
 @media (prefers-color-scheme: dark) {

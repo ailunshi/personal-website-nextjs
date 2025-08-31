@@ -10,16 +10,20 @@ export const metadata: Metadata = {
 };
 
 const raleway = Raleway({
+  display: "swap",
   subsets: ["latin"],
+  weight: ["400", "700"],
   variable: "--font-raleway",
 })
 
 const alata = Alata({
+  display: "swap",
   weight: "400",
   variable: "--font-alata",
 })
 
 const cherish = Cherish({
+  display: "swap",
   weight: "400",
   variable: "--font-cherish",
 })
@@ -30,12 +34,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html 
+      lang="en"
+      className={`${alata.variable} ${cherish.variable} ${raleway.variable}`}>
       <body>
         <div className="theme-bg items-center h-screen w-screen pl-10 pr-10 pt-5 relative">
-          <header className="justify-between flex flex-row items-center"> {/* header */}
+          <header className="justify-between flex flex-row items-center text-white"> {/* header */}
             <div className="justify-start">
-              <h1 className={`${alata.className} text-moon-yellow text-[80px]`}>AILUN SHI</h1>
+              <h1 className={`alata text-moon-yellow text-[80px]`}>AILUN SHI</h1>
             </div>
 
             <div className="justify-end"> {/* menu */}
@@ -54,7 +60,7 @@ export default function RootLayout({
               priority
             />
 
-            <h2 className={`${cherish.className} text-[120px] -m-20`}>
+            <h2 className={`cherish text-[120px] -m-20`}>
               about {/* replace this with child */}
             </h2>
 
