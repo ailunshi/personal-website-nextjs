@@ -21,14 +21,13 @@
   --font-weight-bold: 700;
 }
 
-
-a {
+.socials {
   font-weight: 500;
   color: var(--color-moon-yellow);
   text-decoration: inherit;
 }
 
-a:hover {
+.socials:hover {
   color: #ffffff;
   transition: all 1s ease-in-out;
   transform: scale(1.05);

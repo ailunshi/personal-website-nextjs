@@ -26,7 +26,7 @@ export default function About() {
                     <a 
                     href="https://www.instagram.com/ailunshii/?hl=en" 
                     target="_blank"
-                    className="2xl"
+                    className="2xl socials"
                     >
                     INSTAGRAM
                     </a>
@@ -34,7 +34,7 @@ export default function About() {
                     <a 
                     href="https://ailun.substack.com/"
                     target="_blank"
-                    className="2xl"
+                    className="2xl socials"
                     >
                     SUBSTACK
                     </a>

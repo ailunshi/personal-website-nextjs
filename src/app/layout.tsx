@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Alata, Raleway, Cherish } from "next/font/google";
 import "./globals.css";
 import Menu from "./Menu";
+import Header from "./Header";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -38,7 +39,7 @@ export default function RootLayout({
       lang="en"
       className={`${alata.variable} ${cherish.variable} ${raleway.variable}`}>
       <body>
-        <div className="theme-bg items-center h-screen w-screen pl-10 pr-10 pt-5 relative">
+        <div className="theme-bg items-center h-screen w-screen pl-10 pr-10 pt-5 relative"> {/* need to set minimum as screen */}
           <header className="justify-between flex flex-row items-center text-white"> {/* header */}
             <div className="justify-start">
               <h1 className={`alata text-moon-yellow text-[80px]`}>AILUN SHI</h1>
@@ -50,7 +51,7 @@ export default function RootLayout({
 
           </header>
 
-          <div className="flex flex-row items-center justify-between p-5 mb-10"> {/* need to make sure it adjusts with window size*/}
+          <div className="flex flex-row items-center justify-between p-5 mb-15"> {/* need to make sure it adjusts with window size*/}
             <Image
               className="justify-start -m-30"
               src="/line.svg"
@@ -61,7 +62,7 @@ export default function RootLayout({
             />
 
             <h2 className={`cherish text-[120px] -m-20`}>
-              about {/* replace this with child */}
+              <Header /> {/* replace this with child */}
             </h2>
 
             <Image
