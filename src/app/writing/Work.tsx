@@ -1,6 +1,7 @@
 interface writingData {
     key: number;
     title: string;
+    genre: string;
     description: string;
     notes: string;
     link: boolean;
@@ -15,8 +16,9 @@ export default function Work(props: writingData) {
             </div>
             
             <div className="text-left raleway">
-                <p className="raleway text-[30px]">{props.description}</p>
+                <p className="text-[30px]">{props.genre}</p>
                 { props.link ? <a href={props.notes} className="text-[16px]">read it here</a> : <p>{props.notes}</p> }
+                <p className="text-[16px]">{props.description}</p>
             </div>
             
         </div>

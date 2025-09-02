@@ -7,6 +7,7 @@ export default function Writing() {
             <Work
                 key={writing.id}
                 title={writing.title}
+                genre={writing.genre}
                 description={writing.description}
                 notes={writing.notes}
                 link={writing.link}
