@@ -21,6 +21,48 @@
   --font-weight-bold: 700;
 }
 
+label {
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+input[type="text"], input[type="email"] {
+  border-radius: 10px;
+  border: 1px solid white;
+  height: 40px;
+  margin-bottom: 20px;
+  text-indent: 15px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+textarea {
+  border-radius: 10;
+  border: 1px solid white;
+  text-indent: 15px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-bottom: 30px;
+}
+
+input:hover, textarea:hover {
+  background-color: rgba(134, 102, 169, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  background-color: rgba(134, 102, 169, 0.3);
+  transition: background-color border 0.3s ease-in-out;
+  color: white;
+  border: 1px solid var(--color-moon-yellow);
+  outline: none
+}
+
+label:focus-within {
+  color: var(--color-moon-yellow);
+  transition: color 0.3s;
+}
+
 .socials {
   font-weight: 500;
   color: var(--color-moon-yellow);

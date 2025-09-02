@@ -10,7 +10,7 @@ const data: Work[] = [
     {
         id: 1,
         title: "BEL E KYRE",
-        description: "YA/Adult Fantasy",
+        description: "YA/Adult Fantasy Novel",
         notes: "on submission",
         link: false
     },

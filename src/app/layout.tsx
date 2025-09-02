@@ -39,10 +39,10 @@ export default function RootLayout({
       lang="en"
       className={`${alata.variable} ${cherish.variable} ${raleway.variable}`}>
       <body>
-        <div className="theme-bg items-center h-screen w-screen pl-10 pr-10 pt-5 relative"> {/* need to set minimum as screen */}
+        <div className="theme-bg items-center min-h-screen min-w-screen h-auto w-auto pl-10 pr-10 pt-5 relative"> {/* need to set minimum as screen */}
           <header className="justify-between flex flex-row items-center text-white"> {/* header */}
             <div className="justify-start">
-              <h1 className={`alata text-moon-yellow text-[80px]`}>AILUN SHI</h1>
+              <h1 className={`alata text-moon-yellow text-[72px]`}>AILUN SHI</h1>
             </div>
 
             <div className="justify-end"> {/* menu */}
@@ -61,7 +61,7 @@ export default function RootLayout({
               priority
             />
 
-            <h2 className={`cherish text-[120px] -m-20`}>
+            <h2 className={"cherish text-[120px] -m-20 z-1"}>
               <Header /> {/* replace this with child */}
             </h2>
 
@@ -76,6 +76,12 @@ export default function RootLayout({
           </div>
 
           { children }
+
+          <footer className="flex flex-row justify-end">
+            <p className="text-right raleway">
+              Designed with Figma, built with NextJS and Tailwind CSS, deployed with Vercel
+            </p>
+          </footer>
 
         </div>
 
