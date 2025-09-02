@@ -13,13 +13,13 @@ export default function About() {
             />
 
             <div className="flex flex-col mr-5 p-5"> {/* div for text and socials */}
-                <p className={`text-white raleway p-5 text-2xl`}>
+                <p className={`text-white raleway p-5 text-[20px]`}>
                     Ailun Shi (pronounced Allen) is a novelist currently based in the Bay Area who 
                 has lived across Shanghai, Las Vegas, Los Angeles, Wuhan, and Madrid.
 
                 </p>
 
-                <p className={`text-white raleway p-5 text-2xl`}>
+                <p className={`text-white raleway p-5 text-[20px]`}>
                 She recently graduated from UC Berkeley. Outside of writing, 
                 she’s a competitive ballroom dancer, language enthusiast, and occasional half-marathon runner.
                 </p>
@@ -28,7 +28,7 @@ export default function About() {
                     <a 
                     href="https://www.instagram.com/ailunshii/?hl=en" 
                     target="_blank"
-                    className="2xl socials"
+                    className="text-[16px] socials"
                     >
                     INSTAGRAM
                     </a>
@@ -36,7 +36,7 @@ export default function About() {
                     <a 
                     href="https://ailun.substack.com/"
                     target="_blank"
-                    className="2xl socials"
+                    className="text-[16px] socials"
                     >
                     SUBSTACK
                     </a>

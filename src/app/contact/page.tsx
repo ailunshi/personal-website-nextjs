@@ -21,7 +21,7 @@ export default function Contact() {
 
     return (
         <div className="grid grid-cols-2 gap-30">
-            <div className="text-left text-[24px] raleway">
+            <div className="text-left text-[20px] raleway">
                 <p className="pb-5">
                     For rights inquiries, please contact Leah Pierre at Ladderbird Literary.<br />
                 </p>
@@ -59,7 +59,7 @@ export default function Contact() {
                     
 
                     <button 
-                        className="place-self-center"
+                        className="place-self-center text-[16px]"
                     >
                         SUBMIT
                     </button>
