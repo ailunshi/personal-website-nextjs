@@ -4,18 +4,28 @@ import { useState } from "react";
 export default function Contact() {
 
     const [errorMessage, setErrorMessage] = useState("");
+    //const accessKey: string = process.env.WEB_API_KEY;
+    //console.log(`access key is ${accessKey}`)
 
-    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        const name = formData.get("name");
-        const email = formData.get("email");
-        const subject = formData.get("subject");
-        const message = formData.get("message");
 
-        if (!name || !email || !subject || !message) {
-            setErrorMessage("Please fill out all fields");
-            return;
+        formData.append("access_key", "238866f8-386e-4f11-bb66-449e57d9fbfd");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            console.log("Form submitted successfully");
+            const formElement = e.target as HTMLFormElement;
+            formElement.reset();
+        } else {
+            console.log("Error", data);
         }
     }
 

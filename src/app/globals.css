@@ -39,7 +39,7 @@ input[type="text"], input[type="email"] {
 textarea {
   border-radius: 10;
   border: 1px solid white;
-  text-indent: 15px;
+  padding-left: 15px;
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.05);
   margin-bottom: 20px;
