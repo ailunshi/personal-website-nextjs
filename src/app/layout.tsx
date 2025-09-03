@@ -84,8 +84,8 @@ export default function RootLayout({
 
           
 
-          <footer className="flex flex-row justify-end">
-            <p className="text-right raleway text-[16px]">
+          <footer className="mb-auto justify-end">
+            <p className="mt-auto bottom-0 right-0 text-right raleway text-[12px]">
               Designed with Figma, built with NextJS and Tailwind CSS, deployed with Vercel
             </p>
           </footer>
