@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Alata, Raleway, Cherish } from "next/font/google";
+import { Alata, Raleway, Cherish, Zhi_Mang_Xing } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -12,6 +12,7 @@ const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-raleway",
+  style: ["normal", "italic"]
 })
 
 const alata = Alata({
@@ -26,6 +27,12 @@ const cherish = Cherish({
   variable: "--font-cherish",
 })
 
+const zhimangxing = Zhi_Mang_Xing({
+  display: "swap",
+  weight: "400",
+  variable: "--font-zhimangxing",
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,7 +41,7 @@ export default function RootLayout({
   return (
     <html 
       lang="en"
-      className={`${alata.variable} ${cherish.variable} ${raleway.variable}`}>
+      className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}>
       <body>
         <div className="theme-bg items-center min-h-screen min-w-screen h-auto w-auto pl-10 pr-10 pt-5 relative">
             {children}

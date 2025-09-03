@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Alata, Raleway, Cherish } from "next/font/google";
 
-import Menu from "./Menu";
-import Header from "./Header";
+import Menu from "./menu";
+import Header from "./header";
 import Image from "next/image";
 
 export default function Layout({
@@ -54,10 +54,8 @@ export default function Layout({
 
       </div>
 
-      
-
       <footer className="mb-auto justify-end">
-        <p className="mt-auto bottom-0 right-0 text-right raleway text-[12px]">
+        <p className="mt-auto bottom-0 right-0 text-right raleway text-[12px] italic">
           Designed with Figma, built with NextJS and Tailwind CSS, deployed with Vercel
         </p>
       </footer>

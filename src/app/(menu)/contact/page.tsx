@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import icons from "../socials";
 
 export default function Contact() {
 
@@ -35,9 +36,17 @@ export default function Contact() {
                 <p className="pb-5">
                     For rights inquiries, please contact Leah Pierre at Ladderbird Literary.<br />
                 </p>
-                <p>
-                    For other inquiries, fill out the form -&gt;
+                <p className="pb-5">
+                    For other inquiries, fill out the form &rarr;<br />
                 </p>
+                <p className="pb-5">
+                    Otherwise, find me elsewhere below:<br />
+                </p>
+                <div className="flex flex-row justify-center items-center gap-10">
+                    { icons.instagram }
+                    { icons.substack }
+                </div>
+                
             </div>
 
             <div>

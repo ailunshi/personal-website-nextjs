@@ -1,5 +1,5 @@
-import writingData from "./writingData"
-import Work from "./Work"
+import writingData from "./writingData";
+import Work from "./work";
 
 export default function Writing() {
     const workElements = writingData.map(writing => {

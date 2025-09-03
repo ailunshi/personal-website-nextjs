@@ -88,6 +88,10 @@ label:focus-within {
   font-family: var(--font-raleway), sans-serif;
 }
 
+.zhimangxing {
+  font-family: var(--font-zhimangxing);
+}
+
 
 .theme-bg {
   background-image:

@@ -1,6 +1,8 @@
 import Image from "next/image";
+import icons from "../socials";
 
 export default function About() {
+
     return (
         <div className="flex flex-row gap-10"> {/* div for photo and text */}
             <Image 
@@ -19,27 +21,15 @@ export default function About() {
 
                 </p>
 
-                <p className={`text-white raleway p-5 text-[20px]`}>
+                <p className={`raleway p-5 text-[20px]`}>
                 She recently graduated from UC Berkeley. Outside of writing, 
                 she’s a competitive ballroom dancer, language enthusiast, and occasional half-marathon runner.
                 </p>
 
                 <div className="flex flex-row justify-center items-center p-5 gap-15"> {/* div for links */}
-                    <a 
-                    href="https://www.instagram.com/ailunshii/?hl=en" 
-                    target="_blank"
-                    className="text-[16px] socials"
-                    >
-                    INSTAGRAM
-                    </a>
 
-                    <a 
-                    href="https://ailun.substack.com/"
-                    target="_blank"
-                    className="text-[16px] socials"
-                    >
-                    SUBSTACK
-                    </a>
+                    { icons.instagram }
+                    { icons.substack }
 
                 </div>
           
