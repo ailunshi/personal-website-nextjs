@@ -20,7 +20,7 @@ function Menu() {
         
         {showMenu && (
           <div className="flex flex-row raleway gap-10 text-[16px] z-50">
-            <Link href="/" className={ getHeaderStyle("/") }>HOME</Link>
+            <Link href="/" className={ `${getHeaderStyle("/")} link `}>HOME</Link>
             <Link href="/writing" className={ getHeaderStyle("/writing") }>WRITING</Link>
             <Link href="/about" className={ getHeaderStyle("/about") }>ABOUT</Link>
             <Link href="/contact" className={ getHeaderStyle("/contact") }>CONTACT</Link>
@@ -31,7 +31,7 @@ function Menu() {
         <button
             onClick={ handleMenu }
           >
-            &lt;
+            { showMenu ? <p>&gt;</p> : <p>&lt;</p> }
         </button>
 
       </header>

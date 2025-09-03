@@ -8,8 +8,8 @@ export default function Home() {
                 <h1 className="zhimangxing text-[120px]">施蔼伦</h1>
             </div>
 
-            <div>
-                <Link href="/about">CLICK HERE</Link>
+            <div className="text-center">
+                <Link href="/about" className="cherish text-[120px]">enter &rarr;</Link>
             </div>
             
         </div>

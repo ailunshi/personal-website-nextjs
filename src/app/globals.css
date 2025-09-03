@@ -147,3 +147,8 @@ form > button:hover {
   transition: all 1s ease-in-out;
   opacity: 1;
 }
+
+a:hover {
+  transition: all 1s ease-in-out;
+  transform: scale(1.05);
+}

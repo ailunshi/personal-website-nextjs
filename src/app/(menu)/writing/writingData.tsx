@@ -48,6 +48,14 @@ const data: Work[] = [
         notes: "https://tintjournal.com/flash-nonfiction/pigeons",
         description: "",
         link: true
+    },
+    {
+        id: 5,
+        title: "another",
+        genre: "another",
+        notes: "https://tintjournal.com/flash-nonfiction/pigeons",
+        description: "",
+        link: true
     }
 ]
 

@@ -11,6 +11,10 @@ export default function Contact() {
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
+        if (!formData.get("name") || !formData.get("subject") || !formData.get("email") || !formData.get("message")) {
+            setErrorMessage("Please fill out all fields");
+            return;
+        }
 
         formData.append("access_key", "238866f8-386e-4f11-bb66-449e57d9fbfd");
 
