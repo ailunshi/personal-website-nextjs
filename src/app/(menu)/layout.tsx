@@ -1,6 +1,3 @@
-import type { Metadata } from "next";
-import { Alata, Raleway, Cherish } from "next/font/google";
-
 import Menu from "./menu";
 import Header from "./header";
 import Image from "next/image";
@@ -49,7 +46,6 @@ export default function Layout({
 
       <div className="pr-10 pl-10">
         
-
       { children }
 
       </div>
