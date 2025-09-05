@@ -4,15 +4,16 @@ import icons from "../socials";
 export default function About() {
 
     return (
-        <div className="flex flex-row gap-10"> {/* div for photo and text */}
+        <div className="flex flex-col items-center justify-center gap-10 lg:flex lg:flex-row"> {/* div for photo and text */}
             <Image 
-            src="/DSC01700.jpg"
-            width={0}
-            height={0}
-            alt="Profile picture of Ailun Shi"
-            sizes="100vw"
-            style={{width: "30%", height: "auto"}}
-            />
+                src="/DSC01700.jpg"
+                width={0}
+                height={0}
+                alt="Profile picture of Ailun Shi"
+                sizes="100vw"
+                style={{width: "30%", height: "auto"}}
+                className="mx-auto lg:w-1/3"
+                />
 
             <div className="flex flex-col mr-5 p-5"> {/* div for text and socials */}
                 <p className={`text-white raleway p-5 text-[20px]`}>

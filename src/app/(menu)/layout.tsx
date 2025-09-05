@@ -13,7 +13,7 @@ export default function Layout({
       {/* header */}
       <header className="justify-between flex flex-row items-center text-white pb-3"> 
         <div className="justify-start">
-          <Link href="/" className={`alata text-moon-yellow text-[48px]`}>AILUN SHI</Link>
+          <Link href="/" className={`alata text-moon-yellow text-[30px] sm:text-[48px]`}>AILUN SHI</Link>
         </div>
 
         {/* menu */}
@@ -34,7 +34,7 @@ export default function Layout({
           priority
         />
 
-        <h2 className={"cherish text-[100px] -m-20 z-1 item-center"}>
+        <h2 className={"cherish text-[72px] sm:text-[100px] -m-20 z-1 item-center"}>
           <Header />
         </h2>
 
@@ -49,7 +49,7 @@ export default function Layout({
       </div>
 
       {/* Page Content */}
-      <div className="pr-10 pl-10">
+      <div className="sm:pr-10 sm:pl-10">
         { children }
       </div>
 

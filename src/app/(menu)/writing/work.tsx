@@ -10,9 +10,9 @@ interface writingData {
 export default function Work(props: writingData) {
 
     return (
-        <div className="grid grid-cols-2 gap-35 items-center">
+        <div className="grid grid-cols-2 gap-20 items-center">
             <div className="text-right">
-                <h2 className="alata text-[48px]">{props.title}</h2>
+                <h2 className="alata text-[24px] sm:text-[48px]">{props.title}</h2>
             </div>
             
             <div className="text-left raleway">

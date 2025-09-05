@@ -35,7 +35,7 @@ export default function Contact() {
     }
 
     return (
-        <div className="grid grid-cols-2 gap-30">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-30">
             <div className="text-left text-[20px] raleway">
                 <p className="pb-5">
                     For rights inquiries, please contact Leah Pierre at Ladderbird Literary.<br />
@@ -69,7 +69,6 @@ export default function Contact() {
                     <label className="grid grid-rows">Email
                         <input type="email" name="email"  />
                     </label>
-                    
 
                     <label className="grid grid-rows">Subject
                         <input type="text" name="subject" />

@@ -48,7 +48,7 @@ export default function RootLayout({
       lang="en"
       className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}>
       <body>
-        <div className="theme-bg items-center min-h-screen min-w-screen h-auto w-auto pl-10 pr-10 pt-5 relative overflow-hidden">
+        <div className="theme-bg items-center min-h-screen w-full pl-10 pr-10 pt-5 relative">
             {children}
         </div>
         
