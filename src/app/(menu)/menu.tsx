@@ -31,7 +31,7 @@ function Menu() {
 
     function MobileMenu() {
       return (
-        <div className="flex flex-col justify-center text-center absolute left-0 right-0 top-0 bottom-0 raleway gap-10 text-[16px] z-50 bg-[var(--color-purple-haze)]">
+        <div className="fixed inset-0 h-screen flex flex-col justify-center text-center raleway gap-10 text-[16px] z-50 bg-[var(--color-purple-haze)]">
           <button onClick={handleMenu}>
                 X
           </button>
@@ -41,7 +41,7 @@ function Menu() {
           <Link onClick={ handleMenu } href="/contact" className={ getHeaderStyle("/contact") }>CONTACT</Link>
           <p>{ icons.instagram } <a href="https://www.instagram.com/ailunshii/" target="_blank">@ailunshii</a></p>
         </div>
-        
+
       )
     }
 

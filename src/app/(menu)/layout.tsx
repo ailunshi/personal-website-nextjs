@@ -49,7 +49,7 @@ export default function Layout({
       </div>
 
       {/* Page Content */}
-      <div className="sm:pr-10 sm:pl-10">
+      <div className="pr-10 pl-10">
         { children }
       </div>
 
