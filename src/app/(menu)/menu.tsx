@@ -39,6 +39,7 @@ function Menu() {
           <Link onClick={ handleMenu} href="/about" className={ getHeaderStyle("/about") }>ABOUT</Link>
           <Link onClick={ handleMenu } href="/contact" className={ getHeaderStyle("/contact") }>CONTACT</Link>
           <p>{ icons.instagram } <a href="https://www.instagram.com/ailunshii/" target="_blank">@ailunshii</a></p>
+          
         </div>
       )
     }
