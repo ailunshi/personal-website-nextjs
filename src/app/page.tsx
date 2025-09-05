@@ -8,7 +8,7 @@ export default function Home() {
                 <h1 className="zhimangxing text-[72px] sm:text-[120px]">施蔼伦</h1>
             </div>
 
-            <div className="text-center">
+            <div className="text-right">
                 <Link href="/about" className="cherish text-[72px] sm:text-[120px]">enter &rarr;</Link>
             </div>
             

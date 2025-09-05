@@ -34,7 +34,7 @@ export default function Layout({
           priority
         />
 
-        <h2 className={"cherish text-[72px] sm:text-[100px] -m-20 z-1 item-center"}>
+        <h2 className={"relative text-white cherish text-[72px] sm:text-[100px] -m-20 z-0 pointer-events-none item-center"}>
           <Header />
         </h2>
 
@@ -49,16 +49,9 @@ export default function Layout({
       </div>
 
       {/* Page Content */}
-      <div className="pr-10 pl-10">
+      <div className="sm:pr-10 sm:pl-10">
         { children }
       </div>
-
-      {/* Footer Content*/}
-      <footer className="mb-auto justify-end">
-        <p className="mt-auto bottom-0 right-0 text-right raleway text-[12px] italic">
-          Designed with Figma, built with NextJS and Tailwind CSS, deployed with Vercel
-        </p>
-      </footer>
     </>
   );
 }

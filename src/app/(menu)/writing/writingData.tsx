@@ -33,30 +33,6 @@ const data: Work[] = [
         description: "",
         link: true
     },
-    {
-        id: 4,
-        title: "testing",
-        genre: "test",
-        notes: "https://tintjournal.com/flash-nonfiction/pigeons",
-        description: "",
-        link: true
-    },
-    {
-        id: 5,
-        title: "testing",
-        genre: "test",
-        notes: "https://tintjournal.com/flash-nonfiction/pigeons",
-        description: "",
-        link: true
-    },
-    {
-        id: 5,
-        title: "another",
-        genre: "another",
-        notes: "https://tintjournal.com/flash-nonfiction/pigeons",
-        description: "",
-        link: true
-    }
 ]
 
 export default data;

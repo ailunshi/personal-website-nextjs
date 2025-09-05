@@ -9,7 +9,6 @@ function Menu() {
     const [showMenu, setShowMenu] = useState(false);
     const pathname = usePathname();
     
-
     function handleMenu() {
       setShowMenu((menuSetting) => !menuSetting);
     }
@@ -21,10 +20,10 @@ function Menu() {
     function DeskTopMenu() {
       return (
         <div className="flex flex-row raleway gap-10 text-[16px] z-50">
-          <Link href="/" className={ `${getHeaderStyle("/")} link `}>HOME</Link>
-          <Link href="/writing" className={ getHeaderStyle("/writing") }>WRITING</Link>
-          <Link href="/about" className={ getHeaderStyle("/about") }>ABOUT</Link>
-          <Link href="/contact" className={ getHeaderStyle("/contact") }>CONTACT</Link>
+          <Link onClick={ handleMenu } href="/" className={ `${getHeaderStyle("/")} link `}>HOME</Link>
+          <Link onClick={ handleMenu } href="/writing" className={ getHeaderStyle("/writing") }>WRITING</Link>
+          <Link onClick={ handleMenu } href="/about" className={ getHeaderStyle("/about") }>ABOUT</Link>
+          <Link onClick={ handleMenu } href="/contact" className={ getHeaderStyle("/contact") }>CONTACT</Link>
         </div>
       )
     }
@@ -41,7 +40,6 @@ function Menu() {
           <Link onClick={ handleMenu } href="/contact" className={ getHeaderStyle("/contact") }>CONTACT</Link>
           <p>{ icons.instagram } <a href="https://www.instagram.com/ailunshii/" target="_blank">@ailunshii</a></p>
         </div>
-
       )
     }
 
@@ -50,12 +48,12 @@ function Menu() {
         
         {showMenu && (
           <>
-            <div className="hidden md:block">
-            {DeskTopMenu()}
+            <div className="hidden md:block relative z-50">
+            {<DeskTopMenu />}
             </div>
             
             <div className="block md:hidden">
-              {MobileMenu()}
+              {<MobileMenu />}
             </div>
           </>
         )}
