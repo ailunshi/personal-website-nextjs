@@ -37,7 +37,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   initialScale: 1,
-  width: "device-width"
+  width: "device-width",
+  themeColor: "#8666A9",
 }
 
 const raleway = Raleway({
@@ -75,13 +76,13 @@ export default function RootLayout({
     <html 
       lang="en"
       className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}>
-      <body className="theme-bg min-h-screen flex flex-col">
-        <main className="flex flex-col flex-grow pl-10 pr-10 pt-5 relative">
+      <body className="theme-bg flex flex-col overflow-hidden">
+        <main className="flex-grow items-center w-full pl-10 pr-10 pt-5 relative">
             {children}
         </main>
 
         {/* Footer Content*/}
-        <footer className="pt-5 px-5">
+        <footer className="pt-5">
           <p className="text-right raleway text-[12px] italic">
             Designed with Figma, built with NextJS and Tailwind CSS, deployed with Vercel
           </p>

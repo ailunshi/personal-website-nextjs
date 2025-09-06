@@ -9,7 +9,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <div className="min-h-screen">
       {/* header */}
       <header className="justify-between flex flex-row items-center text-white pb-3"> 
         <div className="justify-start">
@@ -52,6 +52,6 @@ export default function Layout({
       <div className="sm:pr-10 sm:pl-10">
         { children }
       </div>
-    </>
+    </div>
   );
 }
