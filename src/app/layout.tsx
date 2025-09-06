@@ -76,13 +76,13 @@ export default function RootLayout({
     <html 
       lang="en"
       className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}>
-      <body className="theme-bg flex flex-col overflow-hidden">
-        <main className="flex-grow items-center w-full pl-10 pr-10 pt-5 relative">
+      <body className="theme-bg flex flex-col">
+        <main className="flex-grow w-full pl-10 pr-10 pt-5 relative">
             {children}
         </main>
 
         {/* Footer Content*/}
-        <footer className="pt-5">
+        <footer className="p-5">
           <p className="text-right raleway text-[12px] italic">
             Designed with Figma, built with NextJS and Tailwind CSS, deployed with Vercel
           </p>
