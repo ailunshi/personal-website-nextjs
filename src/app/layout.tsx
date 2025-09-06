@@ -3,8 +3,36 @@ import { Alata, Raleway, Cherish, Zhi_Mang_Xing } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ailun Shi - YA/Adult Fantasy Novelist",
+  title: {
+    template: "%s | Ailun Shi",
+    default: "Ailun Shi \u2014 YA/Adult Fantasy Novelist",
+  },
   description: "Ailun Shi is a fantasy novelist based in the Bay Area.",
+  keywords: [
+    "ailun",
+    "shi",
+    "shiailun",
+    "ailunshi",
+    "writing",
+    "novel",
+    "novelist",
+    "ya fantasy",
+    "adult fantasy"
+  ],
+  openGraph: {
+    siteName: "Ailun Shi \u2014 YA/Adult Fantasy Novelist",
+    type: "website",
+    locale: "en_US",
+    url: "https://shiailun.com",
+    images: [
+      {
+        url: "/DSC01700.jpg",
+        width: 1200,
+        height: 630,
+      }
+    ]
+  },
+
 };
 
 export const viewport: Viewport = {
@@ -48,12 +76,12 @@ export default function RootLayout({
       lang="en"
       className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}>
       <body className="theme-bg min-h-screen flex flex-col">
-        <main className="flex-grow items-center w-full pl-10 pr-10 pt-5 relative">
+        <main className="flex flex-col flex-grow pl-10 pr-10 pt-5 relative">
             {children}
         </main>
 
         {/* Footer Content*/}
-        <footer className="justify-end p-5">
+        <footer className="pt-5 px-5">
           <p className="text-right raleway text-[12px] italic">
             Designed with Figma, built with NextJS and Tailwind CSS, deployed with Vercel
           </p>

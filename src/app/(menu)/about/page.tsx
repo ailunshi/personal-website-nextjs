@@ -1,5 +1,10 @@
 import Image from "next/image";
 import icons from "../socials";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About",
+};
 
 export default function About() {
 
@@ -15,8 +20,8 @@ export default function About() {
                 className="mx-auto w-4/5 md:w-1/3"
                 />
 
-            <div className="flex flex-col md:mr-5 md:p-10"> {/* div for text and socials */}
-                <p className={`text-white raleway mb-5 text-[20px]`}>
+            <div className="flex flex-col md:pr-5 md:p-10"> {/* div for text and socials */}
+                <p className={`text-white raleway pb-5 text-[20px]`}>
                     Ailun Shi (pronounced Allen) is a novelist currently based in the Bay Area who 
                 has lived across Shanghai, Las Vegas, Los Angeles, Wuhan, and Madrid.
 
