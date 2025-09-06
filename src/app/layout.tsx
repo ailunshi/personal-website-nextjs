@@ -32,6 +32,31 @@ export const metadata: Metadata = {
       }
     ]
   },
+  icons: {
+    icon: [
+      {
+        url: "/icon.png",
+        type: "image/x-icon"
+      },
+      {
+        url: "/icon.png",
+        sizes: "16x16",
+        type: "image/png"
+      }
+    ],
+    apple: [
+      {
+        url: "/icon.png",
+        sizes: "57x57",
+        type: "image/png"
+      },
+      {
+        url: "/icon.png",
+        sizes: "60x60",
+        type: "image/png"
+      }
+    ]
+  }
 
 };
 
