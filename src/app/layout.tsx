@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Alata, Raleway, Cherish, Zhi_Mang_Xing } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -107,7 +108,40 @@ export default function RootLayout({
   return (
     <html 
       lang="en"
-      className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}>
+      className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}
+    >
+      <head>
+        <Script
+          id="person-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Ailun Shi",
+              "alternateName": "Shi Ailun",
+              "url": "https://shiailun.com",
+              "image": "https://shiailun.com/DSC01700.jpg",
+              "jobTitle": "YA/Adult Fantasy Novelist",
+              "description": "Ailun Shi is a science fiction and fantasy novelist currently based in the Bay Area.",
+              "sameAs": [
+                "https://www.instagram.com/ailunshii",
+                "https://www.ailun.substack.com"
+              ],
+              "knowsAbout": [
+                "Fantasy literature",
+                "Science fiction",
+                "Adult fantasy novels",
+                "Young adult fantasy novels",
+                "Creative writing",
+                "Bel e Kyre"
+              ]
+            })
+          }}
+        />
+      </head>
+
       <body className="theme-bg flex flex-col">
         <main className="flex-grow w-full pl-10 pr-10 pt-5 relative">
             {children}
