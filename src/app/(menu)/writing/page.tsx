@@ -4,6 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Writing",
+    description: "Books and other works written by Ailun Shi"
 };
 
 export default function Writing() {

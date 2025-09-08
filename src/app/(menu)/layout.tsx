@@ -17,9 +17,9 @@ export default function Layout({
         </div>
 
         {/* menu */}
-        <div className="justify-end"> 
+        <nav className="justify-end"> 
           <Menu />
-        </div>
+        </nav>
 
       </header>
 

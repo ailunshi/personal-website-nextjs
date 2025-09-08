@@ -4,6 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "About",
+    description: "About Ailun Shi"
 };
 
 export default function About() {
@@ -18,7 +19,7 @@ export default function About() {
                 sizes="100vw"
                 style={{height: "auto"}}
                 className="mx-auto w-4/5 md:w-1/3"
-                />
+            />
 
             <div className="flex flex-col md:pr-5 md:p-10"> {/* div for text and socials */}
                 <p className={`text-white raleway pb-5 text-[20px]`}>

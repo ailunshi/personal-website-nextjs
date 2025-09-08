@@ -14,10 +14,12 @@ export const metadata: Metadata = {
     "shiailun",
     "ailunshi",
     "writing",
-    "novel",
+    "novels",
     "novelist",
+    "author",
     "ya fantasy",
-    "adult fantasy"
+    "adult fantasy",
+    "books"
   ],
   openGraph: {
     siteName: "Ailun Shi \u2014 YA/Adult Fantasy Novelist",
@@ -36,11 +38,16 @@ export const metadata: Metadata = {
     icon: [
       {
         url: "/icon.png",
-        type: "image/x-icon"
+        type: "image/png"
       },
       {
         url: "/icon.png",
         sizes: "16x16",
+        type: "image/png"
+      },
+      {
+        url: "/icon.png",
+        sizes: "32x32",
         type: "image/png"
       }
     ],
