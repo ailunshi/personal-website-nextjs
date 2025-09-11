@@ -110,37 +110,38 @@ export default function RootLayout({
       lang="en"
       className={`${alata.variable} ${cherish.variable} ${raleway.variable} ${zhimangxing.variable}`}
     >
-      <head>
-        <Script
-          id="person-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Ailun Shi",
-              "alternateName": "Shi Ailun",
-              "url": "https://shiailun.com",
-              "image": "https://shiailun.com/DSC01700.jpg",
-              "jobTitle": "YA/Adult Fantasy Novelist",
-              "description": "Ailun Shi is a science fiction and fantasy novelist currently based in the Bay Area.",
-              "sameAs": [
-                "https://www.instagram.com/ailunshii",
-                "https://www.ailun.substack.com"
-              ],
-              "knowsAbout": [
-                "Fantasy literature",
-                "Science fiction",
-                "Adult fantasy novels",
-                "Young adult fantasy novels",
-                "Creative writing",
-                "Bel e Kyre"
-              ]
-            })
-          }}
-        />
-      </head>
+      
+      <Script
+        id="person-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ailun Shi",
+            "alternateName": "Shi Ailun",
+            "url": "https://shiailun.com",
+            "image": "https://shiailun.com/DSC01700.jpg",
+            "jobTitle": "YA/Adult Fantasy Novelist",
+            "description": "Ailun Shi is a science fiction and fantasy novelist currently based in the Bay Area.",
+            "sameAs": [
+              "https://instagram.com/ailunshii/",
+              "https://ailun.substack.com/",
+              "https://x.com/ailunshi",
+            ],
+            "knowsAbout": [
+              "Fantasy literature",
+              "Science fiction",
+              "Adult fantasy novels",
+              "Young adult fantasy novels",
+              "Creative writing",
+              "Bel e Kyre"
+            ]
+          })
+        }}
+      />
+      
 
       <body className="theme-bg flex flex-col">
         <main className="flex-grow w-full pl-10 pr-10 pt-5 relative">
